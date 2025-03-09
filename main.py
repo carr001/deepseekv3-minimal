@@ -51,7 +51,7 @@ def youtube_comments_main():
     model_config["vocab_size"] = len(tokenizer) 
     model = DeepSeekV3(model_config)    
     print("Preparing data, please wait...")
-    csv_path = "C:/Users/Precision/Onus/Data/YoutubeCommentsDataSet.csv"
+    csv_path = "./data/YoutubeCommentsDataSet.csv"
     train_loader, val_loader, test_loader = create_yt_and_loaders(
         csv_path,
         tokenizer,
